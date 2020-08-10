@@ -1,2 +1,2 @@
 # IconLayer
-Created with CodeSandbox
+Deck gl Icon layer integration with vue.
