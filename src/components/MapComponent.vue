@@ -42,7 +42,7 @@ export default {
     },
     initDeck() {
       const ICON_MAPPING = {
-        marker: { x: 0, y: 0, width: 128, height: 128 }
+        coal: { x: 0, y: 0, width: 32, height: 32 }
       };
       const data = [
         {
@@ -78,12 +78,13 @@ export default {
             id: "icon-layer",
             data,
             pickable: true,
-            iconAtlas: "../assets/location-icon-atlas.png",
-            iconMapping: "../assets/icon-mapping.json",
-            getIcon: d => "marker-1",
+            iconAtlas:
+              "https://raw.githubusercontent.com/UttamRahane/IconLayer/master/src/assets/coal.svg",
+            iconMapping: ICON_MAPPING,
+            getIcon: d => "coal",
             sizeScale: 15,
             getPosition: d => d.coordinates,
-            getSize: d => 5
+            getSize: d => 4
           })
         ]
       });
